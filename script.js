@@ -1,3 +1,12 @@
+var power = false
+
+function start(){
+  // if(!power){ power = true }
+  // if(power){ power = false }
+  power = !power
+  console.log('power = ',power)
+
+}
 // each button click triggers invisible audio file play once
 var soundOne = document.getElementById('soundOne')
   , soundTwo = document.getElementById('soundTwo')
@@ -24,6 +33,7 @@ function playThree(){stopAllSounds();soundThree.play()}
 function playFour(){stopAllSounds();soundFour.play()}
 function playFive(){stopAllSounds();soundFive.play()}
 function playSix(){stopAllSounds();soundSix.play()}
+
 // video on complete event triggers function to replace current video source with next in line
 
 // when correct audio selected, next video load and replace. current button disabled
