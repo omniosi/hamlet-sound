@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Button Number 1a</title>
+  <style>
+    @keyframes draw-one{
+      100% { background-position: -2000px 0; }
+    }
+    body{
+      background: rgb(235,235,235);
+    }
+    main{
+      display: block;
+      width: 100px; height: 100px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .button-one{ 
+      background: url('button_number_1a.svg') no-repeat;
+      width: 2100px;
+      height: 100px;
+      /* animation: draw-one 0.5s steps(10) forwards; */
+      animation-duration: 0.35s;
+      animation-fill-mode: forwards;
+      animation-name: draw-one;
+      animation-timing-function: steps(20);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="button-one"></div>
+  </main>
+</body>
+</html>

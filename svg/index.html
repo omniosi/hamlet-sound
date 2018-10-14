@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Number Buttons</title>
+  <style>
+    html, body{ box-sizing: border-box;margin: 0;padding: 0; }
+    *:before,*:after{box-sizing: inherit}
+    @keyframes draw-one{
+      100% { background-position: -2000px 0; }
+    }
+    @keyframes draw-two{
+      100% { background-position: -3700px 0; }
+    }
+    body{
+      background: rgb(235,235,235);
+    }
+    main{
+      display: block;
+      margin: 0 auto;
+    }
+    button{
+      width: 100px; height: 100px;
+      overflow: hidden;
+      margin: 0;padding: 0;
+    }
+    .button-one{ 
+      background: url('button_number_1a.svg') no-repeat;
+      width: 2100px;
+      height: 100px;
+      animation: draw-one 0.35s steps(20) forwards;
+    }
+    .button-two{ 
+      background: url('button_number_2a.svg') no-repeat;
+      width: 3800px;
+      height: 100px;
+      animation: draw-two 0.35s steps(37) forwards;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <button><div class="button-one"></div></button>
+    <button><div class="button-two"></div></button>
+  </main>
+</body>
+</html>
