@@ -1,11 +1,9 @@
 var power = false
 
 function start(){
-  // if(!power){ power = true }
-  // if(power){ power = false }
   power = !power
-  console.log('power = ',power)
 
+  console.log('power = ', power)
 }
 // each button click triggers invisible audio file play once
 var soundOne = document.getElementById('soundOne')
