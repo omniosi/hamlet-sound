@@ -66,7 +66,7 @@ button{
   border: none;
   background-color: #8B8B8B;
   border-radius: 3px;
-  box-shadow: 
+  box-shadow:
   inset 1px 1px 0 1px #A6AAAD,
   inset -1px -1px 0 1px #717274,
     0 0 0 2px #1D2124;
@@ -117,34 +117,43 @@ button{
 @keyframes draw-five{
   100% { background-position: -4200px 0; }
 }
+@keyframes draw-six{
+  100% { background-position: -4900px 0; }
+}
 
-.button-one{ 
+.button-one{
   background: url('svg/button_one.svg') no-repeat;
   width: 2100px;
   height: 100px;
   animation: draw-one 0.5s steps(20) forwards;
 }
-.button-two{ 
+.button-two{
   background: url('svg/button_two.svg') no-repeat;
   width: 3800px;
   height: 100px;
   animation: draw-two 0.5s steps(37) forwards;
 }
-.button-three{ 
+.button-three{
   background: url('svg/button_three.svg') no-repeat;
   width: 3700px;
   height: 100px;
   animation: draw-three 0.5s steps(36) forwards;
 }
-.button-four{ 
+.button-four{
   background: url('svg/button_four.svg') no-repeat;
   width: 2500px;
   height: 100px;
   animation: draw-four 0.5s steps(24) forwards;
 }
-.button-five{ 
+.button-five{
   background: url('svg/button_five.svg') no-repeat;
   width: 4300px;
   height: 100px;
   animation: draw-five 0.5s steps(42) forwards;
+}
+.button-six{
+  background: url('svg/button_six.svg') no-repeat;
+  width: 5000px;
+  height: 100px;
+  animation: draw-six 0.5s steps(49) forwards;
 }
