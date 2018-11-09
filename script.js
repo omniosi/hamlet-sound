@@ -13,6 +13,8 @@ var soundOne = document.getElementById('soundOne')
   , soundFive = document.getElementById('soundFive')
   , soundSix = document.getElementById('soundSix')
 
+var numberOne = document.getElementsByClassName('one')[0]
+
 function stopAllSounds(){
   soundOne.pause();soundOne.currentTime = 0
   soundTwo.pause();soundTwo.currentTime = 0
@@ -24,14 +26,21 @@ function stopAllSounds(){
 function playOne(){
   stopAllSounds()
   soundOne.play()
-  // console.log('playOne clicked!')
+  console.log('playOne clicked!')
 }
-function playTwo(){stopAllSounds();soundTwo.play()}
-function playThree(){stopAllSounds();soundThree.play()}
-function playFour(){stopAllSounds();soundFour.play()}
-function playFive(){stopAllSounds();soundFive.play()}
-function playSix(){stopAllSounds();soundSix.play()}
+function playTwo(){ stopAllSounds();soundTwo.play() }
+function playThree(){ stopAllSounds();soundThree.play() }
+function playFour(){ stopAllSounds();soundFour.play() }
+function playFive(){ stopAllSounds();soundFive.play() }
+function playSix(){ stopAllSounds();soundSix.play() }
 
 // video on complete event triggers function to replace current video source with next in line
 
 // when correct audio selected, next video load and replace. current button disabled
+
+// when the audio loads, remove the disabled state and start the number animation
+soundOne.addEventListener("load",function(){
+  console.log('soundOne loaded')
+  numberOne.classList.add('anim')
+  numberOne.parentNode.classList.remove('disabled')
+})
